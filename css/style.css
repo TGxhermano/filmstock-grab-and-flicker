@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.pageGrid {
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-template-rows: 10em 12em auto 5em;
+    grid-template-areas: 
+      "pageHeader pageHeader pageHeader"
+      "navWrapper navWrapper navWrapper"
+      "mainWrapper mainWrapper mainWrapper"
+      "pageFooter pageFooter pageFooter";
+}
+
+.pageHeader {
+    grid-area: pageHeader;
+    background-color: blue;
+}
+
+.navWrapper {
+    grid-area: navWrapper;
+    background-color: lightblue;
+}
+
+.mainWrapper {
+    grid-area: mainWrapper;
+    background-color: darkolivegreen;
+
+}
+
+.pageFooter {
+    grid-area: pageFooter;
+    background-color: yellowgreen;
+
+}
+
+#filmStockMonitor {
+    position: absolute;
+    width: 15em;
+    height: 12em;
+    left: 20%;
+    top: 10em;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 10px;
+    z-index: 5;
+}
+
+#filmStockFootage {
+    position: relative;
+    width: 700px;
+    height: 100%;
+    background-color: darkslategray;
+}
+
+#mainTitle {
+    grid-area: mainTitle;
+    background-color: lightcyan;
+
+}
+
+#mainContent {
+    grid-area: mainContent;
+    background-color: darkcyan;
+
+}
